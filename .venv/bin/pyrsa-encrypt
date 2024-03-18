@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/Luck777/Documents/Python/Python Proffesional Portfolio/Image_WaterMarking_Desctop_App/.venv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from rsa.cli import encrypt
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(encrypt())
